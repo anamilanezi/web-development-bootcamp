@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables & Forms</title>
+    <style>
+        body {
+            font-family: monospace;
+            text-align: center;
+        }
+
+        table {
+            margin: auto;
+        }
+
+        td {
+            margin: auto;
+        }
+
+
+        hr {
+            margin: 30px;
+            border-color: blueviolet;
+        }
+
+        .formulario form {
+            text-align: left;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Criando uma tabela -->
+    <h1> TABELA ANINHADA </h1>
+
+    <table border="1px" cellspacing="10px">
+        <thead>
+            <tr>
+                <th>Primeira célula criada</th>
+                <th>Segunda célula criada</th>
+                <th>Terceira célula criada</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>
+                    <table border="1px" >
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                    </table> 
+                </td>
+                <td>
+                    <table border="1px">
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                    </table>
+                </td>
+                <td>
+                    <table border="1px">
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                        <tr>
+                            <td>Célula aninhada</td>
+                            <td>Célula aninhada</td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>Nova linha na C1</td>
+                <td>Nova linha na C2</td>
+                <td>Nova linha na C3</td>
+            </tr>
+        </tbody>
+    </table>
+<hr>
+    <!--Criando um formulário-->
+    <h1>FORMULÁRIO E TIPOS DE INPUT</h1>
+
+<section class="formulario">    
+<table>
+    <form action="">
+    <tr>
+        <td><label for="texto">Text: </label></td>
+        <td><input type="text" id="texto" placeholder="Digite aqui"></td>
+    </tr>
+    <tr>
+        <td><label for="botao">Button: </label></td>
+            <td><input type="button" id="botao" value="value attribute"></td>
+    </tr>
+
+    <tr>
+        <td><label for="color">Color: </label></td>
+        <td><input type="color" id="color"></td>
+    </tr>
+    <tr>
+        <td><label for="date">Date: </label></td>
+        <td><input type="date" id="date"></td>
+    </tr>
+    <tr>
+        <td><label for="datetime">Datetime local: </label></td>
+        <td><input type="datetime-local" id="datetime"></td>
+    </tr>
+    <tr>
+        <td><label for="month">Month: </label></td>
+        <td><input type="month" id="month"></td>
+    </tr>
+    <tr>
+        <td><label for="time">Time: </label></td>
+        <td><input type="time" id="time"></td>
+    </tr>
+    <tr>
+        <td><label for="week">Week: </label></td>
+        <td><input type="week" id="week"></td>
+    </tr>
+    <tr>
+        <td><label for="email">Email: </label></td>
+        <td><input type="email" id="email" placeholder="email@dominio.com"></td>
+    </tr>
+    <tr>
+        <td><label for="hidden">Hidden: </label></td>
+        <td><input type="hidden" id="hidden"></td>
+    </tr>
+    <tr>
+        <td><label for="image">Image: </label></td>
+        <td><input type="image" id="image" src="" alt="src attribute"></td>
+    </tr>
+
+    <tr>
+        <td><label for="number">Number: </label></td>
+        <td><input type="number" id="number" step="0.01" placeholder="Digite um número"></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password: </label></td>
+        <td><input type="password" id="password"></td>
+    </tr>
+    <tr>
+        <td><label for="checkbox">Checkbox: </label></td>
+        <td><input type="checkbox" id="checkbox"><br></td>
+    </tr>
+    <tr>
+        <td><label for="radio">Radio button: </label></td>
+        <td><input type="radio" id="radio" value="radio" checked></td>
+    </tr>
+    <tr>
+        <td><label for="range">Range: </label></td>
+        <td><input type="range" id="range"></td>
+    </tr>
+    <tr>
+        <td><label for="search">Search: </label></td>
+        <td><input type="search" id="search"></td>
+    </tr>
+    <tr>
+        <td><label for="tel">Tel: </label></td>
+        <td><input type="tel" id="tel"></td>
+    </tr>
+
+    <tr>
+        <td><label for="url">Url: </label></td>
+        <td><input type="url" id="url"></td>
+    </tr>
+
+        <tr>
+        <td><label for="reset">Reset: </label></td>
+        <td><input type="reset" id="reset"></td>
+    </tr>
+    <tr>
+        <td><label for="file">File: </label></td>
+        <td><input type="file" id="file"></td>
+    </tr>
+    <tr><td></td></tr>
+    <tr>
+        <td><label for="submit">Submit: </label></td>
+        <td><input type="submit" id="submit"></td>
+    </tr>
+
+
+
+
+
+
+    </form>         
+</table>
+</section>
+
+
+
+</body>
+</html>
