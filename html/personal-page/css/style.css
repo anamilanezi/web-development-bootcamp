@@ -1,0 +1,156 @@
+/*CORES: #557B83 #39AEA9 #A2D5AB #E5EFC1 #FFA054 #FFB577 #D5AE88 #FBDEC2*/ 
+
+/* principal */
+
+body {
+    width: 940px;
+    text-align: center;
+    margin: auto;
+    font-family: 'Overpass Mono', monospace;
+    background-color: #E5EFC1;
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #557B83;
+}
+
+h3 {
+    margin: 0;
+    font-size: 25px;
+    color: #FBDEC2;
+}
+
+table {
+    border: 1px solid #E5EFC1;
+    margin: auto;
+    padding: 10px;
+    width: 95%;
+    
+}
+
+
+/* header */
+.perfil-principal {
+    /*border: 1px solid black;*/
+    background-color: #557B83;
+    margin: 1rem;
+    padding: 2rem 2rem;
+    text-align: center;
+}
+
+.conteudo-principal {
+    display: inline-block;
+    /*border: 1px solid red;*/
+    padding: 10px;
+    vertical-align: bottom;
+    text-align: left;
+    max-width: 60%
+}
+
+.conteudo-principal img {
+    border: 2px dashed #E5EFC1;
+}
+
+.conteudo-principal h2 {
+    font-size: 30px;
+    margin: 3px;
+    color: #E5EFC1;
+}
+
+.conteudo-principal p {
+    margin: 5px;
+    color: #A2D5AB;
+}
+/* MAIN */
+
+.curso-ano {
+    font-size: 18px;
+    font-weight: lighter;
+    color: #E5EFC1;
+}
+
+.campo-titulo {
+    font-size: 20px;
+    font-weight: bold;
+    width: 150px;
+    /*margin-right: 50px;*/
+    text-align: right;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+/* Formação */
+
+.formacao {
+    /*border: 1px solid black;*/
+    background-color: #39AEA9;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+.formacao a {
+    color: #E5EFC1;
+}
+
+.formacao .campo-titulo {
+    color: #E5EFC1;
+}
+
+.formacao .campo-descricao {
+    text-align: left;
+    padding: 10px;
+    color: #FFFFFF;
+    vertical-align: top;
+}
+
+.formacao h3 {
+    text-align: right;
+} 
+
+/* Cursos e certificados */
+.cursos-certificados {
+    background-color: #A2D5AB;
+    margin: 1rem;
+    padding: 20px;
+    text-align: center;
+    
+}
+.cursos-certificados h3 {
+    text-align: left;
+    color: #557B83;
+}
+    
+.cursos-certificados .campo-titulo {
+    color: #FFFFFF;
+}
+
+.cursos-certificados .campo-descricao {
+    text-align: left;
+    padding: 10px;
+    color: #FFFFFF;
+    vertical-align: top;
+}
+
+.cursos-certificados .lista-cursos {
+    color: #38737B;
+    font-size: 13px;
+}
+
+.cursos-certificados a {
+    color: #22515A;
+}
+
+.alura {
+    font-size: 13px;
+
+}
+
+
+
+/*CORES: #557B83 #39AEA9 #A2D5AB #E5EFC1 #FFA054 #FFB577 #D5AE88 #FBDEC2*/ 
