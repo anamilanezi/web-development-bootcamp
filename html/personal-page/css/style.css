@@ -10,8 +10,6 @@ body {
     margin: auto;
     /*margin: auto;*/
     font-family: 'Overpass Mono', monospace;
-
-
 }
 
 @media (max-width: 670px) {
@@ -23,7 +21,6 @@ body {
         margin-left: -50px;
         text-align: center;
     }
-
 }
 
 a {
