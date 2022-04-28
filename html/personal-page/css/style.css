@@ -3,11 +3,19 @@
 /* principal */
 
 body {
-    width: 940px;
+    max-width: 60%;
     text-align: center;
     margin: auto;
+    /*margin: auto;*/
     font-family: 'Overpass Mono', monospace;
     background-color: #E5EFC1;
+}
+
+@media (max-width: 400px) {
+    body {
+        max-width: 95%;
+    }
+
 }
 
 a {
