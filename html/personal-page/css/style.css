@@ -11,9 +11,14 @@ body {
     background-color: #E5EFC1;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 670px) {
     body {
         max-width: 95%;
+    }
+
+    .conteudo-principal {
+        margin-left: -50px;
+        text-align: center;
     }
 
 }
