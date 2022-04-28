@@ -33,7 +33,6 @@ table {
     
 }
 
-
 /* header */
 .perfil-principal {
     /*border: 1px solid black;*/
@@ -66,6 +65,11 @@ table {
     margin: 5px;
     color: #A2D5AB;
 }
+
+.conteudo-principal .oi {
+    color: #22515A;
+}
+
 /* MAIN */
 
 .curso-ano {
@@ -95,7 +99,7 @@ table {
 }
 
 .formacao a {
-    color: #E5EFC1;
+    color: #FBDEC2;
 }
 
 .formacao .campo-titulo {
