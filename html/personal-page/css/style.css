@@ -3,12 +3,15 @@
 /* principal */
 
 body {
+    background-image: url('../images/background.jpg');
+    height: 100%;
     max-width: 60%;
     text-align: center;
     margin: auto;
     /*margin: auto;*/
     font-family: 'Overpass Mono', monospace;
-    background-color: #E5EFC1;
+
+
 }
 
 @media (max-width: 670px) {
