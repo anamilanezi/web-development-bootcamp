@@ -79,7 +79,7 @@ nav li {
     color: #A2D5AB;
 }
 
-.perfil-container {
+.perfil-container, .contato-container {
     /*border: 1px solid black;*/
     background-color: #557B83;
     margin: 0 1rem;
@@ -87,7 +87,7 @@ nav li {
     text-align: center;
 }
 
-.conteudo-perfil {
+.conteudo-perfil, .contato {
     display: inline-block;
     /*border: 1px solid red;*/
     padding: 10px;
@@ -100,7 +100,7 @@ nav li {
     border: 2px dashed #E5EFC1;
 }
 
-.conteudo-perfil h2 {
+.conteudo-perfil h2, .contato h2 {
     font-size: 30px;
     margin: 3px;
     color: #E5EFC1;
@@ -230,6 +230,26 @@ footer {
 
 .img-projetos {
     max-width: 200px;
+}
+
+/* contato */
+
+.form-label {
+    color: #FBDEC2;
+}
+
+textarea {
+    resize: none;
+}
+
+input, textarea {
+    font-family: 'Overpass Mono', monospace;
+    width: 100%;
+    padding: 5px;
+    background: #E5EFC1;
+    border: none;
+    border-radius: 10px;
+    margin: 10px 0 10px 0;
 }
 
 
