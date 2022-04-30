@@ -33,7 +33,7 @@ a {
     font-weight: bold;
 }
 
-a:hover {
+.lista-cursos a:hover, .formacao a:hover {
     background-color: #557B83;
 }
 
@@ -69,12 +69,21 @@ nav li {
 
 }
 
+
+
+nav a:hover {
+    background: #A2D5AB;
+    color: #22515A;
+}
+
 .item:before {
+    font-size: 15px;
     content: " >> ✳ ";
     color: #A2D5AB;
 }
 
 .item:after {
+    font-size: 15px;
     content: " ✳ << ";
     color: #A2D5AB;
 }
@@ -208,10 +217,14 @@ nav li {
     padding: 20px;
 }
 
-
 .projetos h3 {
     text-align: right;
     color: #E5EFC1
+}
+
+.projetos hr {
+    width: 95%;
+    border-color: #E5EFC1;
 }
 
 .projetos li {
@@ -219,6 +232,19 @@ nav li {
     width: 30%;
     border: 1px;
 }
+
+.img-projetos {
+    max-width: 200px;
+}
+
+.link-projetos a:hover {
+    color: #557B83;
+    background-color: #A2D5AB;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+
+/* rodape */
 
 footer {
     margin: 0 1rem;
@@ -228,14 +254,18 @@ footer {
     text-align: center;
 }
 
-.img-projetos {
-    max-width: 200px;
-}
 
 /* contato */
+#titulo-contato {
+    text-shadow: 2px 2px #39AEA9;
+}
 
 .form-label {
     color: #FBDEC2;
+}
+
+::placeholder {
+    color:#39AEA9;
 }
 
 textarea {
@@ -245,12 +275,25 @@ textarea {
 input, textarea {
     font-family: 'Overpass Mono', monospace;
     width: 100%;
-    padding: 5px;
+    padding: 10px;
     background: #E5EFC1;
     border: none;
     border-radius: 10px;
     margin: 10px 0 10px 0;
 }
 
+
+#botao-enviar {
+    cursor: pointer;
+    float: right;
+    width: 30%;
+    color: #557B83;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#botao-enviar:hover {
+    background-color: #A2D5AB;
+}
 
 /*CORES: #557B83 #39AEA9 #A2D5AB #E5EFC1 #FFA054 #FFB577 #D5AE88 #FBDEC2*/ 
