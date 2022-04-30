@@ -11,9 +11,18 @@
 </head>
 <body>
 <header>
-    <div class="perfil-principal">
-        <div class="conteudo-principal"><img src="images/me.gif" alt="Ana sentada no chão com um cachorro" id="#gif-perfil"></div>
-        <div class="conteudo-principal">
+    <div class="menu">
+        <nav class="menu-navegacao">
+            <ul>
+                <li class="item"><a href="#nav-formacao">Currículo</a></li>
+                <li class="item"><a href="#nav-projetos">Projetos</a></li>
+                <li class="item">Contato</li>
+            </ul>
+        </nav>
+    </div>
+    <div class="perfil-container">
+        <div class="conteudo-perfil"><img src="images/me.gif" alt="Ana sentada no chão com um cachorro" id="#gif-perfil"></div>
+        <div class="conteudo-perfil">
             <h2>Ana</h2>
             <h2>Medeiros</h2>
             <h2>Milanezi</h2>
@@ -25,9 +34,9 @@
     </div>
 </header>
     <main>
-            
+
         <div class="formacao">
-            <h3>FORMAÇÃO ACADÊMICA <<</h3>
+            <h3 id="nav-formacao">FORMAÇÃO ACADÊMICA <<</h3>
             <table>
                 <tr>
                     <td class="campo-titulo">Mestrado<br> <span class="curso-ano">2014 - 2016</span></td>
@@ -102,8 +111,34 @@
                 
             </table>
         </div>
-    </main>
 
+        <div class="projetos">
+            <h3 id="nav-projetos">PROJETOS <<</h3>
+            <ul>
+                <li>
+                    <h4>Desenhe com o mouse</h4>
+                    <img src="images/paint.png" alt="Paleta de tinta" class="img-projetos">
+                </li>
+                <li>
+                    <h4>Acerte a nuvem</h4>
+                    <img src="images/nuvem.png" class="img-projetos" alt="Nuvens">
+                </li>
+                <li>
+                    <h4>Algoritmos</h4>
+                    <img src="images/algoritmos.png" class="img-projetos" alt="Diagrama de algoritmo">
+                </li>
+            </ul>
+        </div>
+    </main>
+<footer>
+    <div class="rodape">
+        <h4>Criado por Ana Medeiros Milanezi</h4>
+        <ul>
+            <li>LinkedIn</li>
+            <li>GitHub</li>
+        </ul>
+    </div>
+</footer>
 
 
 </body>
