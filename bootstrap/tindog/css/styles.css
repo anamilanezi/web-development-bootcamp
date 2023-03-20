@@ -1,9 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;900&family=Ubuntu:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;700;900&family=Ubuntu:wght@400;600&display=swap');
 
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 18px;
 }
+
+h1 {
+    font-weight: 900;
+    line-height: 1.5;
+    font-size: 3.5rem;
+}
+
+h2 {
+    font-weight: 700;;
+    font-size: 3rem;
+}
+
+h3 {
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+
+p {
+    color: #8f8f8f;
+}
+
+/* Navbar and Title */
 
 #title {
     background-color: #ff4c68;
@@ -14,13 +36,6 @@ body {
     padding: 3% 15%;
     overflow: hidden;
 }
-
-h1 {
-    font-weight: 900;
-    line-height: 1.5;
-    font-size: 3.5rem;
-}
-
 
 .navbar {
     padding-bottom: 4.5rem;
@@ -47,39 +62,71 @@ h1 {
     margin-left: 50px;
 }
 
+/* Features */
+
 #features {
-
-    width: 80%;
-    margin: 2rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    padding: 7% 15%;
 }
-
 
 .feature-item {
     text-align: center;
-    margin: 10% 0;
+    padding: 5%;
 }
 
 .feature-item > i {
-    font-size: 3rem;
     color: #ef8172;
+    margin-bottom: 1.2rem;
 }
 
 .feature-item > i:hover {
     color: #ff4c68;
 }
 
-#features h3 {
-    margin-top: 5%;
-    font-weight: 900;
-    font-size: 1.5rem;
+/* Testimonials */
+
+#testimonials {
+    background-color: #ef8172;
+    text-align: center;
+    color: #fff;
 }
 
-#features p {
-    color: #8f8f8f;
-    width: 70%;
-    margin: 0 auto;
+.carousel-item {
+    padding: 7% 15%;
 }
 
+.testimonial-img {
+    max-width: 150px;
+    border-radius: 75px;
+    margin: 10px;
+}
+
+/* Press  */
+
+#press {
+    background-color: #ef8172;
+    text-align: center;
+    padding-bottom: 3%;
+}
+
+.press-img {
+    width: 15%;
+    padding: 0 2%;
+}
+
+
+@media screen and (max-width: 900px) {
+
+    .navbar {
+        padding-bottom: 2rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .download-btn {
+        margin: 0;
+    }
+
+
+}
