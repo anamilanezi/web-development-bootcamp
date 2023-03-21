@@ -12,7 +12,8 @@ h1 {
 }
 
 h2 {
-    font-weight: 700;;
+    font-weight: 700;
+    ;
     font-size: 3rem;
 }
 
@@ -80,12 +81,12 @@ p {
     padding: 5%;
 }
 
-.feature-item > i {
+.feature-item>i {
     color: #ef8172;
     margin-bottom: 1.2rem;
 }
 
-.feature-item > i:hover {
+.feature-item>i:hover {
     color: #ff4c68;
 }
 
@@ -118,9 +119,12 @@ p {
 .press-img {
     width: 15%;
     padding: 0 2%;
-    filter: gray; /* IE6-9 */
-    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
-    filter: grayscale(1); /* Microsoft Edge and Firefox 35+ */
+    filter: gray;
+    /* IE6-9 */
+    -webkit-filter: grayscale(1);
+    /* Google Chrome, Safari 6+ & Opera 15+ */
+    filter: grayscale(1);
+    /* Microsoft Edge and Firefox 35+ */
 }
 
 .press-img:hover {
@@ -228,4 +232,3 @@ p {
         display: none;
     }
 }
-
