@@ -33,7 +33,7 @@ p {
 }
 
 .top-container {
-    padding: 3% 15%;
+    padding: 3% 15% 7%;
     overflow: hidden;
 }
 
@@ -56,16 +56,23 @@ p {
     margin: 5% 3% 5% 0;
 }
 
+.image-div {
+    position: relative;
+}
+
 .title-img {
     width: 60%;
     transform: rotate(25deg);
     margin-left: 50px;
+    position: absolute;
 }
 
 /* Features */
 
 #features {
     padding: 7% 15%;
+    background-color: white;
+    position: relative;
 }
 
 .feature-item {
@@ -143,19 +150,82 @@ p {
     color: #fff;
 }
 
-@media screen and (max-width: 900px) {
+/* Call to Action  */
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    padding: 10% 20% 5%;
+}
+
+.cta-title {
+    color: #fff;
+    font-size: 3.5rem;
+}
+
+
+/* Footer  */
+
+#footer {
+    text-align: center;
+    background-color: #fff;
+    padding: 5% 30%;
+}
+
+.footer-icons {
+    padding: 10px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-icons:hover {
+    color: #ef8172;
+}
+
+
+
+@media screen and (max-width: 1050px) {
 
     .navbar {
         padding-bottom: 2rem;
+    }
+
+    #title {
+        text-align: center;
     }
 
     h1 {
         font-size: 3rem;
     }
 
-    .download-btn {
-        margin: 0;
+    .title-img {
+        position: static;
+        transform: rotate(0);
+        margin: auto;
+        width: 40%;
     }
 
+    .testimonial-text {
+        font-size: 2.5rem;
+    }
 
+    .testimonial-name {
+        display: block;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+    }
 }
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 2.5rem;
+        padding: 5%;
+    }
+
+    .title-img {
+        display: none;
+    }
+}
+
