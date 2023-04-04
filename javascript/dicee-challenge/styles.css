@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Lilita+One&family=Noto+Sans+Miao&display=swap');
+
+
+.container {
+  width: 70%;
+  margin: auto;
+  text-align: center;
+}
+
+.dice {
+  text-align: center;
+  display: inline-block;
+
+}
+
+body {
+  background-color: #393E46;
+  font-family: 'Noto Sans Miao', sans-serif;
+}
+
+h1 {
+  margin: 30px;
+  font-family: 'Lilita One', cursive;
+  text-shadow: 5px 0 #232931;
+  font-size: 8rem;
+  color: #4ECCA3;
+}
+
+p {
+  font-size: 2rem;
+  color: #4ECCA3;
+
+}
+
+img {
+  width: 70%;
+}
+
+button {
+  margin: 5%;
+  padding: 1%;
+  font-family: 'Noto Sans Miao', sans-serif;;
+  background-color: #4ECCA3;
+  border: 1px solid white;
+}
+
+footer {
+  margin-top: 5%;
+  color: #EEEEEE;
+  text-align: center;
+
+}
