@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position</title>
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    padding-top: 20px;
+}
+.square-container {
+    position: relative;
+    left: 100px;
+    top: 100px;
+    width: 400px;
+    height: 400px;
+    background-color: lightgray;
+}
+
+.top-container {
+    width: 100px;
+    height: 100px;
+    background-color: #F24C4C;
+}
+
+.middle-container {
+    width: 100px;
+    height: 100px;
+    background-color:#293462;
+    position: absolute;
+    left: 150px;
+    top: 150px;
+
+}
+
+.bottom-container {
+    width: 100px;
+    height: 100px;
+    background-color: #F7D716;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+</style>
+
+
+<body>
+    <div class="square-container">
+    
+        <div class="top-container">
+            <p>Top container</p>
+        </div>
+        
+        <div class="middle-container">
+            <p>Middle container</p>
+        </div>
+        <div class="bottom-container">
+            <p>Bottom container</p>
+        </div>
+    </div>
+
+</body>
+</html>

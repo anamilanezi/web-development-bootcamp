@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Margin, border and padding</title>
+</head>
+<style>
+
+body {
+    margin: 0;
+    font-family: monospace;
+}
+
+p {
+    text-align: center;
+    color: black;
+}
+
+.top-container {
+    width: 200px;
+    height: 200px;
+    background-color: #C689C6;
+    padding: 20px;
+    border: solid 10px #937DC2;
+}
+
+.middle-container {
+    width: 200px;
+    height: 200px;
+    background-color:#E8A0BF;
+    border: solid 20px #937DC2;
+    margin-left: 260px;
+
+}
+
+.bottom-container {
+    width: 200px;
+    height: 200px;
+    background-color: #FCC5C0;
+    border: solid 10px #937DC2;
+    margin-left: 500px;
+}
+
+</style>
+
+
+<body>
+    <div class="top-container">
+        <p>Padding: 20px</p>
+        <p>Border: 10px</p>
+        <p>Margin: 0px</p>
+        <p>Total = 260px</p>
+    </div>
+
+    <div class="middle-container">
+        <p>Padding: 0px</p>
+        <p>Border: 20px</p>
+        <p>Margin-left: 260px</p>
+        <p>Total = 240px</p>
+    </div>
+    <div class="bottom-container">
+        <p>Padding: 0px</p>
+        <p>Border: 10px</p>
+        <p>Margin-left: 500px</p>
+        <p>Total = 220px</p>
+    </div>
+</body>
+</html>
