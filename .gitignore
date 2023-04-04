@@ -1,2 +1,4 @@
 # Don't track content of these folders
-resources/
+**/resources/
+**/personal-page/
+**/my-site/
