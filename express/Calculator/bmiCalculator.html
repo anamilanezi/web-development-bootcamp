@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Muli&display=swap');
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Muli', sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        overflow: hidden;
+        margin: 0;
+    }
+
+    form {
+        font-family: inherit;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <h1>BMI Calculator</h1>
+    <div class="container">
+        <form action="/bmicalculator" method="post">
+            <input type="text" name="weight" placeholder="Enter your weight">
+            <input type="text" name="height" placeholder="Enter your height">
+            <button type="submit" name="submit">Get your BMI!</button>
+        </form>
+    </div>
+    
+</body>
+</html>
