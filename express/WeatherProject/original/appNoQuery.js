@@ -9,7 +9,8 @@ const https = require('node:https');
 app.get("/", (req, res) => {
 
     // https module request must use another name for the response callback (!= res)
-    const url = 'https://api.openweathermap.org/data/2.5/weather?q=Criciuma&units=metric&appid=f6e33309496a5af1c621dbd6fcc67207'
+    const apiKey = ''
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=Criciuma&units=metric&appid=${apiKey}`
     
     https.get(url, (response) => {
         
