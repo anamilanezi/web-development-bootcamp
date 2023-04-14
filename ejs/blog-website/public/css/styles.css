@@ -23,6 +23,18 @@ p {
     text-align: justify;
 }
 
+.footer p {
+    text-align: center;
+}
+
+a {
+    color: #1abc9c;
+}
+
+a:hover {
+    color: #639289;
+}
+
 
 .container-fluid {
     padding-top: 70px;

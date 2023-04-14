@@ -7,7 +7,9 @@
     <% posts.forEach(post => { %>
         <hr>
         <h2>
-            <%= post.postTitle %>
+            <a href="/posts/<%= post.postTitle %>">
+                <%= post.postTitle %>
+            </a>
         </h2>
 
         <small class="date">
