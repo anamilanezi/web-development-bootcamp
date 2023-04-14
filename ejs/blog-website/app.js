@@ -10,8 +10,8 @@ const aboutContent        = "Hac habitasse platea dictumst vestibulum rhoncus es
 const contactContent      = "Scelerisque eleifend donec pretium vulputate sapien. Rhoncus urna neque viverra justo nec ultrices. Arcu dui vivamus arcu felis bibendum. Consectetur adipiscing elit duis tristique. Risus viverra adipiscing at in tellus integer feugiat. Sapien nec sagittis aliquam malesuada bibendum arcu vitae. Consequat interdum varius sit amet mattis. Iaculis nunc sed augue lacus. Interdum posuere lorem ipsum dolor sit amet consectetur adipiscing elit. Pulvinar elementum integer enim neque. Ultrices gravida dictum fusce ut placerat orci nulla. Mauris in aliquam sem fringilla ut morbi tincidunt. Tortor posuere ac ut consequat semper viverra nam libero.";
 
 const posts = [];
-    // const titles = [];
-    // const posts = [];
+
+let postId = 1;
 
 const app = express();
 
@@ -68,8 +68,19 @@ app.post('/compose', (req, res) => {
 
   const day = today.toLocaleDateString("en-us", options);
 
+  
+  let title = (req.body.postTitle).toLowerCase();
+
+  // Check title for duplicity
+  posts.forEach(p => {
+    if (Object.values(p).indexOf(title) > -1) {
+      title = `${title} #${postId}`
+      postId++;
+   } 
+  })
+
   const post = {
-    postTitle: req.body.postTitle,
+    postTitle: title,
     postText : req.body.postText,
     postDate : day,
   }
@@ -78,24 +89,8 @@ app.post('/compose', (req, res) => {
   res.redirect('/')
 
 })
-    //   const newTitle = req.body.postTitle
-    //   const newPost = req.body.newPost;
-  
-    //   if (newPost === "") {
-    //     posts.push("Empty publication.")
-    //   } else {
-    //     posts.push(newPost)
-    //   }
-
-    //   if (newTitle === "") {
-    //     titles.push("Empty title.")
-    //   } else {
-    //     titles.push(newTitle)
-    //   }
-    //   res.redirect('/')
-    // })
 
 
-app.listen(3000, function() {
+app.listen(4000, function() {
   console.log("Server started on port 3000");
 });

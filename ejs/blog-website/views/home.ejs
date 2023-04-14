@@ -8,7 +8,7 @@
         <hr>
         <h2>
             <a href="/posts/<%= post.postTitle %>">
-                <%= post.postTitle %>
+                <%= post.postTitle.toUpperCase() %>
             </a>
         </h2>
 
@@ -17,7 +17,7 @@
         </small>
 
         <p class="post-content">
-            <%= post.postText %>
+            <%= post.postText.substring(0, 101) + '...' %>
         </p>
 
 
