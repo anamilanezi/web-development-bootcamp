@@ -4,18 +4,24 @@
     <p><%=homeContent%></p>
 
 
-
-    <% titles.forEach((title, i) => { %>
-          
+    <% posts.forEach(post => { %>
+        <hr>
         <h2>
-            <%= title %>
+            <%= post.postTitle %>
         </h2>
 
-        <p>
-            <%= posts[i] %>
+        <small class="date">
+            <%= post.postDate %>
+        </small>
+
+        <p class="post-content">
+            <%= post.postText %>
         </p>
+
+
 
     <% }) %>
 
 
 <%- include("partials/footer") -%>
+
